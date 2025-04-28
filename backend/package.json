@@ -28,10 +28,10 @@
     "jsonwebtoken": "^9.0.2",
     "mysql2": "^3.14.0",
     "sequelize": "^6.37.7",
-    "socket.io": "^4.8.1"
+    "socket.io": "^4.8.1",
+    "prisma": "^6.6.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.9",
-    "prisma": "^6.6.0"
+    "nodemon": "^3.1.9"
   }
 }
