@@ -40,6 +40,9 @@ const server = new ApolloServer({
   },
   context: async ({ req, res }) => {
     let user = null;
+    if (req.body.operationName === "signup") {
+      return { req, res, sequelize, io }; // Skip user authentication
+    }
     try {
       user = await getCurrentUser(req);
     } catch (err) {
